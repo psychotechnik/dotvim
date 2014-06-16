@@ -1,2 +1,2 @@
-set lines=64
+set lines=74
 set columns=90

@@ -7,7 +7,9 @@
 " DO NOT USE <C-z> FOR SAVING WHEN PRESENTING!
 " ============================================
 
-set guifont=gohufont\ 11
+set guifont=Hermit\ 8
+"set guifont=ProFont\ 11
+"set guifont=gohufont\ 11
 set guioptions-=m  "remove menu bar
 set guioptions-=T  "remove toolbar
 set guioptions-=r  "remove right-hand scroll ba
@@ -150,6 +152,10 @@ set smartcase
 set nobackup
 set nowritebackup
 set noswapfile
+
+
+"https://github.com/othree/javascript-libraries-syntax.vim
+let g:used_javascript_libs = 'jQuery'
 
 
 " Setup Pathogen to manage your plugins

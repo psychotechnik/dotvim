@@ -107,9 +107,13 @@ color wombat256mod
 
 " Enable syntax highlighting
 " You need to reload this file for the change to apply
+set nocompatible
 filetype off
 filetype plugin indent on
 syntax on
+
+" Force using the Django template syntax file
+let g:sls_use_jinja_syntax = 0
 
 
 " Showing line numbers and length

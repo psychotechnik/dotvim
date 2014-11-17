@@ -28,3 +28,6 @@
 [submodule "bundle/puppet"]
 	path = bundle/puppet
 	url = git://github.com/rodjek/vim-puppet.git
+[submodule "bundle/salt-vim"]
+	path = bundle/salt-vim
+	url = git://github.com/saltstack/salt-vim.git

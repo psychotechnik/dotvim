@@ -108,11 +108,15 @@ color liquidcolor
 
 " Enable syntax highlighting
 " You need to reload this file for the change to apply
+set nocompatible
 filetype off
 filetype plugin indent on
 syntax on
 
 au BufRead,BufNewFile *.handlebars,*.hbs set ft=html syntax=handlebars
+" Force using the Django template syntax file
+let g:sls_use_jinja_syntax = 0
+
 
 " Showing line numbers and length
 set number  " show line numbers

@@ -7,9 +7,9 @@
 " DO NOT USE <C-z> FOR SAVING WHEN PRESENTING!
 " ============================================
 
-set guifont=Hermit\ 8
-"set guifont=ProFont\ 11
-"set guifont=gohufont\ 11
+;set guifont=Monaco 10
+"set guifont=Roboto 10
+"set guifont=ProFont\ 9
 set guioptions-=m  "remove menu bar
 set guioptions-=T  "remove toolbar
 set guioptions-=r  "remove right-hand scroll ba
@@ -102,7 +102,8 @@ au InsertLeave * match ExtraWhitespace /\s\+$/
 " mkdir -p ~/.vim/colors && cd ~/.vim/colors
 " wget -O wombat256mod.vim http://www.vim.org/scripts/download_script.php?src_id=13400
 set t_Co=256
-color wombat256mod
+;color wombat256mod
+color liquidcolor
 
 
 " Enable syntax highlighting
@@ -111,6 +112,7 @@ filetype off
 filetype plugin indent on
 syntax on
 
+au BufRead,BufNewFile *.handlebars,*.hbs set ft=html syntax=handlebars
 
 " Showing line numbers and length
 set number  " show line numbers

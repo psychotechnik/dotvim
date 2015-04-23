@@ -7,7 +7,7 @@
 " DO NOT USE <C-z> FOR SAVING WHEN PRESENTING!
 " ============================================
 
-;set guifont=Monaco 10
+set guifont=Monaco\ 10
 "set guifont=Roboto 10
 "set guifont=ProFont\ 9
 set guioptions-=m  "remove menu bar
@@ -102,8 +102,9 @@ au InsertLeave * match ExtraWhitespace /\s\+$/
 " mkdir -p ~/.vim/colors && cd ~/.vim/colors
 " wget -O wombat256mod.vim http://www.vim.org/scripts/download_script.php?src_id=13400
 set t_Co=256
-;color wombat256mod
-color liquidcolor
+"color wombat256mod
+"color liquidcolor
+color gotham
 
 
 " Enable syntax highlighting
@@ -192,7 +193,6 @@ set wildignore+=*_build/*
 set wildignore+=*/coverage/*
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)$',
   \ 'file': '\v\.(exe|so|dll)$',

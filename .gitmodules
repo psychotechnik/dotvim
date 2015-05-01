@@ -31,3 +31,6 @@
 [submodule "salt-vim"]
 	path = salt-vim
 	url = git@github.com:saltstack/salt-vim.git
+[submodule ".vim/salt-vim"]
+	path = .vim/salt-vim
+	url = git@github.com:saltstack/salt-vim.git
